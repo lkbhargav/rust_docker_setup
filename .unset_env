@@ -1,0 +1,6 @@
+# git remote repo name
+unset REPOSITORY_NAME
+# expected image name, once the binary is packed with it
+unset APP_IMAGE_NAME
+# git remote repo url
+unset REPOSITORY_LINK
