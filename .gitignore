@@ -1,3 +1,4 @@
 .env*
 builder/id_*
 bin/*
+.DS_Stor*

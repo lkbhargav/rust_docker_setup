@@ -2,5 +2,7 @@
 unset REPOSITORY_NAME
 # expected image name, once the binary is packed with it
 unset APP_IMAGE_NAME
-# git remote repo url
+# git remote repo url (ssh url - you can fetch it from the clone section)
 unset REPOSITORY_LINK
+# branch name that needs to be cloned (for prod it will be `master`, however for other branches just give it's name)
+unset BRANCH_TO_CLONE

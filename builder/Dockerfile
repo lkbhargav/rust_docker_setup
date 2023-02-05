@@ -2,6 +2,7 @@ FROM rust:latest
 
 ARG REPOSITORY_NAME
 ARG REPOSITORY_LINK
+ARG BRANCH_TO_CLONE
 
 WORKDIR /app
 
@@ -22,7 +23,7 @@ RUN chmod +x entrypoint.sh
 RUN touch /root/.ssh/known_hosts
 RUN ssh-keyscan -T 60 github.com >> /root/.ssh/known_hosts
 
-RUN git clone -b master git@github.com:lkbhargav/$REPOSITORY_NAME.git
+RUN git clone -b $BRANCH_TO_CLONE $REPOSITORY_LINK
 RUN mv $REPOSITORY_NAME/* .
 RUN rm -rf target/release
 
