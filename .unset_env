@@ -1,5 +1,7 @@
 # git remote repo name
 unset REPOSITORY_NAME
+# app name as it is in the TOML file
+unset APP_NAME
 # expected image name, once the binary is packed with it
 unset APP_IMAGE_NAME
 # git remote repo url (ssh url - you can fetch it from the clone section)

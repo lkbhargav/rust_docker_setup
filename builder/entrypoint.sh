@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # you can find this in toml file
-APP_NAME="rust_axum_hello_world"
+APP_NAME=$1
 BINARY_NAME="app"
 SHARED_DIRECTORY="/app/bin"
 WORKING_DIRECTORY="/app"
